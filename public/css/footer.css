@@ -1,0 +1,38 @@
+
+footer {
+    background-color: #ffffff;
+    text-align: center;
+}
+ 
+li {
+    list-style: none;
+}
+
+
+.footer-card i {
+    color: var(--azul);
+    text-align: center;   
+    margin: 10px;
+    font-size: 2em; 
+}
+.footer-gift i {
+    color:  var(--azul);
+    text-align: center;
+    margin: 10px;
+    font-size: 2em; 
+}
+
+.footer-user i {
+    color: var(--azul);
+    text-align: center;
+    margin: 10px;
+    font-size: 2em; 
+    
+}
+footer p {
+    text-align: left;
+}
+h2 {
+    color: var(--gris_oscuro);
+    font-size: 24px;
+}

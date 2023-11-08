@@ -1,0 +1,49 @@
+:root {
+    --amarillo: #EAC926;
+    --azul: #03264C;
+    --celeste: #1259c3;
+    --gris_oscuro: #666;
+    --gris_claro: #ebebeb;
+    --verde: #39b54a;
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+}
+body {
+    background-color: var(--gris_claro)
+}
+
+
+@media (min-width: 768px) {
+
+    /* Ocultar descripción del artículo en tablet */
+    .producto .descripciones {
+        display: none;
+        }
+        
+    }
+            
+    /* Media query para desktop  */
+    @media (min-width: 1024px) {
+    
+    .producto .descripciones {
+        display: block;
+        }
+    .burger-menu {
+        display: none;
+        }
+    }
+            
+    
+    @media (max-width: 400px) {
+        .site-navbar, .login-navbar {
+            display: none;
+            }
+        }
+    

@@ -1,0 +1,32 @@
+header {
+    background-color: var(--amarillo);
+    background-size: cover;
+}
+.search-bar {
+    background-color: var(--amarillo);
+    margin: 25px;
+}
+.header-glass i{
+    background-color: var(--gris_claro);
+    padding: 3px 3px;
+    border-radius: 3px;
+}
+.sin-puntos {
+    list-style-type: none; 
+    padding-left: 0;
+}
+.header-p {
+    text-align: center;
+}
+.burger-menu {
+    text-align: center; 
+}
+.burger-menu i {
+    color: #ffffff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    background-color: var(--azul);
+    font-size: 2em; 
+    margin-bottom: 10px; 
+}
+
