@@ -2,33 +2,6 @@
 @import './header.css';
 @import './main.css';
 @import './footer.css';
+@import './normalize.css';
 
 
-@media (min-width: 361px) {
-
-
-.producto .descripciones {
-    display: none;
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
-    
-}
-        
-
-@media (min-width: 769px) {
-
-.producto .descripciones {
-    display: block;
-                    }
-
-.burger-menu {
-    display: none;
-    }
-}
-        
-
-@media (max-width: 360px) {
-.site-navbar, .login-navbar {
-    display: none;
-    }
-}

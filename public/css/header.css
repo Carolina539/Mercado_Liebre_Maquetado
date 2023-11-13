@@ -1,32 +1,148 @@
 header {
     background-color: var(--amarillo);
-    background-size: cover;
 }
+
+.logo-envio {
+    width: 50%;
+}
+
 .search-bar {
     background-color: var(--amarillo);
     margin: 25px;
+    display: flex;
+    width: 50%;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 20px;
+
 }
-.header-glass i{
+
+.header-glass i {
     background-color: var(--gris_claro);
     padding: 3px 3px;
     border-radius: 3px;
 }
+
 .sin-puntos {
-    list-style-type: none; 
-    padding-left: 0;
+    list-style-type: none;
+    display: flex;
 }
+
 .header-p {
     text-align: center;
+    width: 100%;
 }
+
+.site-navbar {
+    padding-bottom: 20px;
+    display: none;
+    width: 100%;
+}
+
+header nav {
+    display: flex;
+}
+
+.header nav ul,
+.login {
+    display: flex;
+    width: 100%;
+    gap: 15px;
+
+}
+
+a {
+    color: black;
+}
+
 .burger-menu {
-    text-align: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
 }
+
 .burger-menu i {
     color: #ffffff;
     padding: 5px 8px;
     border-radius: 5px;
     background-color: var(--azul);
-    font-size: 2em; 
-    margin-bottom: 10px; 
+    font-size: 2em;
+    margin-bottom: 10px;
+
 }
 
+.login {
+    justify-content: flex-end;
+
+}
+
+@media (max-width: 767px) {
+
+    .search-bar {
+        width: 100%;
+        margin: 0;
+    }
+
+
+    .burger-menu {
+        display: block;
+        text-align: center;
+    }
+
+    .sin-puntos,
+    .login {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .header-p {
+        display: flex;
+        text-align: center;
+
+        flex-grow: 100;
+    }
+}
+
+@media (min-width: 768px) {
+    .logo-container {
+        display: flex;
+        width: 75%
+    }
+
+
+    .site-navbar {
+        display: block;
+
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .header-p {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 30px;
+
+        width: 400px;
+
+    }
+
+    .login {
+
+        justify-content: flex-end;
+        padding: left 100px;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .site-navbar {
+        display: block;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+}
