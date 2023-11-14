@@ -1,0 +1,86 @@
+.form h3 {
+    width: 100%;
+}
+
+.form {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+}
+
+.form--div {
+    border: none;
+    width: 100%;
+    padding: 14px;
+}
+
+.form__perfil--usuario {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+.form__div__intereses div {
+    width: 100%;
+}
+
+.form--boton {
+    text-align: center;
+}
+
+.form--boton div {
+    padding: 5px 0;
+
+}
+
+.form__boton--enviar {
+    color: white;
+    padding: 15px;
+    background-color: var(--celeste);
+    border-radius: 5px;
+    width: 100%;
+    border: none;
+}
+
+.form__boton--borrar {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    padding: 13px;
+}
+
+.form__intereses {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.form__div__escribir {
+    padding: 15px;
+    width: 100%;
+}
+
+/*TABLET*/
+@media (min-width:768px) {
+    .form {
+        padding: 0 15%;
+    }
+
+    .form__boton__subir {
+        width: 50%;
+    }
+
+    .form__boton__borrar {
+
+        width: 50%;
+    }
+
+}

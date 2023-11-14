@@ -10,7 +10,7 @@ header {
     background-color: var(--amarillo);
     margin: 25px;
     display: flex;
-    width: 50%;
+    width: 75%;
     align-items: center;
     margin-top: 10px;
     margin-left: 20px;
@@ -39,16 +39,13 @@ header {
     width: 100%;
 }
 
-header nav {
-    display: flex;
-}
+
 
 .header nav ul,
 .login {
     display: flex;
     width: 100%;
     gap: 15px;
-
 }
 
 a {
@@ -72,10 +69,7 @@ a {
 
 }
 
-.login {
-    justify-content: flex-end;
 
-}
 
 @media (max-width: 767px) {
 
@@ -92,7 +86,7 @@ a {
 
     .sin-puntos,
     .login {
-        display: flex;
+        display: block;
         justify-content: space-around;
     }
 
@@ -102,6 +96,7 @@ a {
 
         flex-grow: 100;
     }
+    
 }
 
 @media (min-width: 768px) {
@@ -130,10 +125,18 @@ a {
     }
 
     .login {
-
+        gap:15px;
         justify-content: flex-end;
         padding: left 100px;
     }
+    .sin-puntos,
+    .login {
+        
+        display: block;
+        justify-content: space-around;
+    }
+
+ 
 }
 
 @media (min-width: 1024px) {
@@ -145,4 +148,5 @@ a {
     .burger-menu {
         display: none;
     }
+   
 }
