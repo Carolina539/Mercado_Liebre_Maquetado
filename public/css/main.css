@@ -1,3 +1,11 @@
+
+.producto-info {
+    background-color: #fff;
+    padding-bottom: 10px;
+    border-top: black
+}
+
+
 .precio {
     display: flex;
     font-size: 18px;
@@ -20,13 +28,14 @@
 main {
     width: 90%;
     margin: 0 auto;
-    padding: 10px;
 }
+
+
 
 .producto {
     border-top: 1px solid #ebebeb;
     padding: 15px 15px 0 15px;
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+   
     margin-bottom: 10px;
     width: 100%;
     margin-bottom: 20px;
@@ -35,17 +44,14 @@ main {
 .producto_ofertas {
     border-top: 1px solid #ebebeb;
     padding: 15px 15px 0 15px;
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    
     margin-bottom: 10px;
     width: 100%;
     margin-bottom: 20px;
 }
 
 
-.producto img {
-    display: block;
-    margin: 0 auto;
-}
+
 
 .producto p {
     text-align: center;
@@ -75,6 +81,11 @@ main {
     width: 30px;
     height: 30px;
     background-color: white;
+    transition: all 2s;
+}
+
+.logo-envio i:hover {
+   transform: rotate(-90deg);
 }
 
 .precio-descuento {
@@ -91,7 +102,7 @@ main {
     .productos-container {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        
         row-gap: 20px;
     }
 
@@ -102,8 +113,9 @@ main {
     .productos-container_ofertas {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        
         row-gap: 20px;
+
     }
 
     .producto_ofertas {
@@ -117,7 +129,8 @@ main {
     .producto_ofertas .descripciones {
         display: block;
     }
-
+    
+    
 }
 
 @media (min-width: 1024px) {
@@ -136,5 +149,8 @@ main {
 
     .producto_ofertas .descripciones {
         display: block;
+    }
+    .descripciones:hover p{
+        height: 0;
     }
 }
